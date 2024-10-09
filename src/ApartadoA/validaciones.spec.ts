@@ -1,4 +1,4 @@
-import { validarIBAN } from "./validaciones";
+import { validarFormatoIBAN } from "./validaciones";
 
 describe("validarIBAN", () => {
   test.each([
@@ -15,7 +15,7 @@ describe("validarIBAN", () => {
   ])(
     "Debería devolver para el IBAN %p el valor %p",
     (IBAN: string, expected: boolean) => {
-      expect(validarIBAN(IBAN)).toBe(expected);
+      expect(validarFormatoIBAN(IBAN)).toBe(expected);
     }
   );
 });
