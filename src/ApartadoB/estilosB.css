@@ -35,15 +35,23 @@ p{
 #input-elements{
     display: flex;
     flex-direction: column;
-    gap: 1rem
-;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-#boton:hover{
+#resultados {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+
+}
+button:hover{
     cursor: pointer;
     background-color:cadetblue;
 }
 
+
 img{
-    width: 30px;
+    width: 200px;
+    height: auto;
 }
